@@ -1,3 +1,17 @@
 * {
   margin: o;
+}
+
+body {
+  margin: 1.5em;
+  font-family: "poppins", sans-serif;
+}
+
+.section-1 {
+  background-color: rgb(240, 26, 26);
+  padding-bottom: 2em;
+  align-items: center;
+}
+.section-1 .section-nav {
+  margin-bottom: 4em;
 }/*# sourceMappingURL=styles.css.map */
