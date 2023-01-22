@@ -1,16 +1,207 @@
-* {
-    margin: o;
+:root {
+  --primary-color: rgb(7, 7, 201);
+  --secondary-color: rgb(4, 4, 41);
 }
 body {
-  margin: 1.5em;
-  font-family: "poppins", sans-serif;
+  font-family: "poppins" sans-serif;
+  margin: 0.5em;
+}
+.head {
+  padding: 1em;
+  background: white;
+
+  .logo {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    span {
+      color: var(--primary-color);
+    }
+  }
+  .navbar {
+    display: none;
+  }
+  .container {
+    display: flex;
+    place-content: space-between;
+
+    .mobile-menu {
+      cursor: pointer;
+    }
+  }
 }
 .section-1 {
-    background-color: rgb(240, 26, 26);
-    padding-bottom: 2em;
-    align-items: center;
-
-    .section-nav {
-        margin-bottom: 4em;
+  background-color: #ece5e5;
+  .coach {
+    text-align: center;
+    line-height: 2em;
+    text-size-adjust: 2em;
+    padding-top: 1em;
+  }
+  .p-coach {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  .img-1 {
+    width: 80%;
+    height: 100%;
+    padding-left: 2em;
+    &:hover {
+      transform: translateY(-10px);
     }
+  }
+  .para {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .aboutme {
+    display: flex;
+    align-items: center;
+    .aboutme-button {
+      background-color: var(--secondary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 45em;
+      font-size: 1em;
+      padding: 0.6em 1.3em;
+      margin-bottom: 2em;
+    }
+  }
 }
+
+.section-2 {
+  line-height: 2em;
+  background-color: #f2f2f2;
+  .section-2-h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 1em;
+  }
+}
+.section-3 {
+  background-color: rgb(248, 240, 240);
+  padding-bottom: 1em;
+  .testimonials {
+    padding: 1em 0 0 0;
+  }
+  .success {
+    font-size: 50px;
+  }
+  .quote {
+    display: block;
+  }
+}
+
+.section-4 {
+  background-color: var(--secondary-color);
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+
+  .phylosophy {
+    padding-top: 1em;
+    color: white;
+  }
+  .phil-test {
+    font-size: 2.5em;
+    color: white;
+    line-height: 1.2em;
+  }
+  .talk-button {
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 45em;
+    font-size: 16px;
+    padding: 0.6em 1.3em;
+  }
+}
+.footer {
+  background-color: black;
+  color: white;
+  .author {
+    padding-top: 1.2em;
+  }
+
+  .icon {
+    .icon-card {
+      .icon-card-list {
+        position: relative;
+      }
+    }
+  }
+  .copyright {
+    .copy {
+      color: var(--primary-color);
+    }
+  }
+}
+/*aboutme.html page*/
+.abt-section-1 {
+  background-color: #f3ecec;
+  padding-bottom: 2em;
+  .abt-me {
+    text-align: center;
+    line-height: 2em;
+    text-size-adjust: 2em;
+    padding-top: 1em;
+  }
+  .desc {
+    font-size: 3em;
+    text-align: center;
+  }
+  .abt-img-1 {
+    width: 80%;
+    height: 100%;
+    padding-left: 2em;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+.abt-section-2 {
+  text-align: left;
+  .abt-coach {
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  .abt-coach-1 {
+    padding-bottom: 0.1em;
+    line-height: 2em;
+  }
+  .experience {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .experience-1 {
+    line-height: 2em;
+  }
+}
+.abt-section-3 {
+  background-color: var(--secondary-color);
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+
+  .phylosophy {
+    padding-top: 1em;
+    color: white;
+  }
+  .phil-test {
+    font-size: 2.5em;
+    color: white;
+    line-height: 1.2em;
+  }
+  .talk-button {
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 45em;
+    font-size: 16px;
+    padding: 0.6em 1.3em;
+  }
+}
+/*pricing.html page*/

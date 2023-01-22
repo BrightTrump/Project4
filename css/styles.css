@@ -1,17 +1,209 @@
-* {
-  margin: o;
+:root {
+  --primary-color: rgb(7, 7, 201);
+  --secondary-color: rgb(4, 4, 41);
 }
 
 body {
-  margin: 1.5em;
-  font-family: "poppins", sans-serif;
+  font-family: "poppins" sans-serif;
+  margin: 0.5em;
+}
+
+.head {
+  padding: 1em;
+  background: white;
+}
+.head .logo {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.head .logo span {
+  color: var(--primary-color);
+}
+.head .navbar {
+  display: none;
+}
+.head .container {
+  display: flex;
+  place-content: space-between;
+}
+.head .container .mobile-menu {
+  cursor: pointer;
 }
 
 .section-1 {
-  background-color: rgb(240, 26, 26);
-  padding-bottom: 2em;
+  background-color: #ece5e5;
+}
+.section-1 .coach {
+  text-align: center;
+  line-height: 2em;
+  -webkit-text-size-adjust: 2em;
+     -moz-text-size-adjust: 2em;
+          text-size-adjust: 2em;
+  padding-top: 1em;
+}
+.section-1 .p-coach {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+.section-1 .img-1 {
+  width: 80%;
+  height: 100%;
+  padding-left: 2em;
+}
+.section-1 .img-1:hover {
+  transform: translateY(-10px);
+}
+.section-1 .para {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.section-1 .aboutme {
+  display: flex;
   align-items: center;
 }
-.section-1 .section-nav {
-  margin-bottom: 4em;
-}/*# sourceMappingURL=styles.css.map */
+.section-1 .aboutme .aboutme-button {
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 45em;
+  font-size: 1em;
+  padding: 0.6em 1.3em;
+  margin-bottom: 2em;
+}
+
+.section-2 {
+  line-height: 2em;
+  background-color: #f2f2f2;
+}
+.section-2 .section-2-h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+
+.section-3 {
+  background-color: rgb(248, 240, 240);
+  padding-bottom: 1em;
+}
+.section-3 .testimonials {
+  padding: 1em 0 0 0;
+}
+.section-3 .success {
+  font-size: 50px;
+}
+.section-3 .quote {
+  display: block;
+}
+
+.section-4 {
+  background-color: var(--secondary-color);
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+}
+.section-4 .phylosophy {
+  padding-top: 1em;
+  color: white;
+}
+.section-4 .phil-test {
+  font-size: 2.5em;
+  color: white;
+  line-height: 1.2em;
+}
+.section-4 .talk-button {
+  background-color: var(--secondary-color);
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 45em;
+  font-size: 16px;
+  padding: 0.6em 1.3em;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+.footer .author {
+  padding-top: 1.2em;
+}
+.footer .icon .icon-card .icon-card-list {
+  position: relative;
+}
+.footer .copyright .copy {
+  color: var(--primary-color);
+}
+
+/*aboutme.html page*/
+.abt-section-1 {
+  background-color: #f3ecec;
+  padding-bottom: 2em;
+}
+.abt-section-1 .abt-me {
+  text-align: center;
+  line-height: 2em;
+  -webkit-text-size-adjust: 2em;
+     -moz-text-size-adjust: 2em;
+          text-size-adjust: 2em;
+  padding-top: 1em;
+}
+.abt-section-1 .desc {
+  font-size: 3em;
+  text-align: center;
+}
+.abt-section-1 .abt-img-1 {
+  width: 80%;
+  height: 100%;
+  padding-left: 2em;
+}
+.abt-section-1 .abt-img-1:hover {
+  transform: translateY(-10px);
+}
+
+.abt-section-2 {
+  text-align: left;
+}
+.abt-section-2 .abt-coach {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.abt-section-2 .abt-coach-1 {
+  padding-bottom: 0.1em;
+  line-height: 2em;
+}
+.abt-section-2 .experience {
+  font-size: 3em;
+  font-weight: bold;
+}
+.abt-section-2 .experience-1 {
+  line-height: 2em;
+}
+
+.abt-section-3 {
+  background-color: var(--secondary-color);
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+}
+.abt-section-3 .phylosophy {
+  padding-top: 1em;
+  color: white;
+}
+.abt-section-3 .phil-test {
+  font-size: 2.5em;
+  color: white;
+  line-height: 1.2em;
+}
+.abt-section-3 .talk-button {
+  background-color: var(--secondary-color);
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 45em;
+  font-size: 16px;
+  padding: 0.6em 1.3em;
+}
+
+/*pricing.html page*//*# sourceMappingURL=styles.css.map */
