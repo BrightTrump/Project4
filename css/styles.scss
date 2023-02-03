@@ -4,21 +4,23 @@
 }
 body {
   font-family: "poppins" sans-serif;
-  margin: 0.5em;
+  margin: 0;
+  padding-left: 0.5em;
 }
 .head {
-  padding: 1em;
+  padding: 1em .5em 1em 0;
   background: white;
 
   .logo {
     font-weight: bold;
     color: black;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
     span {
       color: var(--primary-color);
     }
   }
+
   .navbar {
     display: none;
   }
@@ -32,7 +34,8 @@ body {
   }
 }
 .section-1 {
-  background-color: #ece5e5;
+  background-color: #f3ecec88;
+  padding-top: 2em;
   .coach {
     text-align: center;
     line-height: 2em;
@@ -60,6 +63,7 @@ body {
   .aboutme {
     display: flex;
     align-items: center;
+    justify-content: center;
     .aboutme-button {
       background-color: var(--secondary-color);
       color: white;
@@ -120,8 +124,8 @@ body {
   }
 }
 .footer {
-  background-color: black;
-  color: white;
+  background-color: #f3ecec88;
+  color: black;
   .author {
     padding-top: 1.2em;
   }
@@ -141,8 +145,9 @@ body {
 }
 /*aboutme.html page*/
 .abt-section-1 {
-  background-color: #f3ecec;
+  background-color: #f3ecec88;
   padding-bottom: 2em;
+  padding-top: 2em;
   .abt-me {
     text-align: center;
     line-height: 2em;
@@ -205,3 +210,126 @@ body {
   }
 }
 /*pricing.html page*/
+.pricing-section-1 {
+  padding-bottom: 2em;
+  padding-top: 2em;
+  .pricing {
+    font-size: 3em;
+    text-align: center;
+  }
+  .packages {
+    .consult {
+      font-size: 1em;
+    }
+    .explicit {
+      font-size: 1em;
+    }
+  }
+}
+.pricing-section-2 {
+  background-color: var(--secondary-color);
+  padding-bottom: 2em;
+
+  .phylosophy {
+    padding-top: 1em;
+    color: white;
+  }
+  .phil-test {
+    font-size: 2.5em;
+    color: white;
+    line-height: 1.2em;
+  }
+  .talk-button {
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 45em;
+    font-size: 16px;
+    padding: 0.6em 1.3em;
+  }
+}
+/*contact.html page*/
+.contact-section {
+  padding-top: 2em;
+
+  .contact {
+    font-size: 3em;
+  }
+  .cont {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  form {
+    width: 100%;
+    background-color: rgb(217, 217, 224);
+    padding-bottom: 1.2em;
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid black;
+      box-sizing: border-box;
+      border-radius: 1em;
+    }
+    textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: .5em 0 2em;
+      box-sizing: border-box;
+      border-radius: 1em;
+    }
+  }
+  .contact-button {
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 45em;
+    font-size: 16px;
+    padding: 0.6em 2em;
+  }
+  .contact-img-1 {
+    width: 80%;
+    height: 100%;
+    margin-top: 3em;
+    padding-left: 1em;
+  }
+}
+/*end of contact page*/
+.navbar.menu-btn {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  background-color: black;
+  height: 100vh;
+
+  .navbar-ul {
+    padding: 1.5em;
+    margin-top: 2em;
+
+    .link {
+      list-style-type: none;
+
+      .ref {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 0.5em 0 0.5em 0;
+        font-size: 1.3em;
+        text-align: right;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.mobile-menu-exit {
+  float: right;
+  cursor: pointer;
+  margin: 0.5em;
+}

@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/Project4/css/styles.css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <div class="head">
@@ -21,7 +22,7 @@
           src="images/menu.svg"
           alt="Open Navigation"
         />
-        <nav class="navbar">
+        <nav class="navbar menu-btn">
           <img
             id="mobile-exit"
             class="mobile-menu-exit"
@@ -30,14 +31,16 @@
           />
           <ul class="navbar-ul">
             <li class="link current">
-              <a href="#" target="_self">Home</a>
-            </li>
-            <li class="link"><a href="about.html" target="_self">About</a></li>
-            <li class="link">
-              <a href="pricing.html" target="_self">Pricing</a>
+              <a class="ref" href="#" target="_self">Home</a>
             </li>
             <li class="link">
-              <a href="contact.html" target="_self">Contact</a>
+              <a class="ref" href="about.html" target="_self">About</a>
+            </li>
+            <li class="link">
+              <a class="ref" href="pricing.html" target="_self">Pricing</a>
+            </li>
+            <li class="link">
+              <a class="ref" href="contact.html" target="_self">Contact</a>
             </li>
           </ul>
         </nav>
