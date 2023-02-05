@@ -13,9 +13,30 @@
     <script src="/Project4/js/script.js" defer></script>
   </head>
   <body>
+    <header>
+      <div class="hero">
+        <a href="#" class="logo">Bright<span>Trump</span></a>
+        <ul class="hero-ul">
+          <li class="hero-link">
+            <a
+              class="hero-ref"
+              href="https://www.w3schools.com/html/html_intro.asp"
+              target="_blank"
+              >Start building</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="sec">
+      <p class="sec-p">
+        <i class="fa-regular fa-circle-check"></i>No credit card required
+      </p>
+    </section>
+
     <div class="head">
       <div class="container">
-        <a href="#" class="logo">Bright<span>Trump</span></a>
         <img
           id="mobile-cta"
           class="mobile-menu"
@@ -31,7 +52,7 @@
           />
           <ul class="navbar-ul">
             <li class="link current">
-              <a class="ref" href="#" target="_self">Home</a>
+              <a class="ref" href="index.html" target="_self">Home</a>
             </li>
             <li class="link">
               <a class="ref" href="about.html" target="_self">About</a>
@@ -40,7 +61,7 @@
               <a class="ref" href="pricing.html" target="_self">Pricing</a>
             </li>
             <li class="link">
-              <a class="ref" href="contact.html" target="_self">Contact</a>
+              <a class="ref" href="#" target="_self">Contact</a>
             </li>
           </ul>
         </nav>
@@ -48,76 +69,82 @@
     </div>
 
     <section class="contact-section">
-      <h1 class="contact">Contact</h1>
+      <div class="contact-div">
+        <div>
+          <h1 class="contact">Contact</h1>
+          <p class="cont">
+            Ready to take the first step on your journey to success?<br />
+            Reach out and we can start discussing how to change your life.
+          </p>
+          <form action="/action_page.php">
+            <label for="fname">Firstname</label><br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Your name"
+            /><br /><br />
 
-      <p class="cont">
-        Ready to take the first step on your journey to success? Reach out and
-        we can start discussing how to change your life.
-      </p>
+            <label for="lname">Last name</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Your last name"
+            /><br /><br />
 
-      <form action="/action_page.php">
-        <label for="fname">Firstname</label><br />
-        <input
-          type="text"
-          id="fname"
-          name="fname"
-          placeholder="Your name"
-        /><br /><br />
+            <label for="email">Email</label><br />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email address"
+            /><br /><br />
 
-        <label for="lname">Last name</label><br />
-        <input
-          type="text"
-          id="lname"
-          name="lname"
-          placeholder="Your last name"
-        /><br /><br />
-
-        <label for="email">Email</label><br />
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Your email address"
-        /><br /><br />
-
-        <label for="message">Message</label><br />
-        <textarea name="comment" id="message" cols="19" rows="5"></textarea>
-        <a class="contact-button" href="#">Send</a>
-      </form>
-
-      <img class="contact-img-1" src="images/SUG6.jpeg" alt="Bright Trump" />
-
-      <footer class="footer">
-        <p class="author">Author: BrightTrump</p>
-        <p>
-          <a href="mailto:brightmunemu@gmail.com">brightmunemu@gmail.com</a>
-        </p>
-        <p>+2347062948871</p>
-
-        <h3>Contact us @</h3>
-
-        <div class="icon">
-          <ul class="icon-card">
-            <li class="icon-card-list">
-              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li class="icon-card-list">
-              <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li class="icon-card-list">
-              <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li class="icon-card-list">
-              <a href="facebook.com"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-          </ul>
+            <label for="message">Message</label><br />
+            <textarea name="comment" id="message" cols="19" rows="5"></textarea>
+            <a class="contact-button" href="#">Send</a>
+          </form>
         </div>
-
-        <p class="copyright">
-          copyright &copy; All Right Reserved | Designed
-          <span class="copy">By BrightTrump</span> 2023
-        </p>
-      </footer>
+        <div>
+          <img
+            class="contact-img-1"
+            src="images/SUG6.jpeg"
+            alt="Bright Trump"
+          />
+        </div>
+      </div>
     </section>
+    <footer class="footer">
+      <p class="author">Author: BrightTrump</p>
+      <p>
+        <a href="mailto:brightmunemu@gmail.com">brightmunemu@gmail.com</a>
+      </p>
+      <p>+2347062948871</p>
+
+      <h3>Contact us @</h3>
+
+      <div class="icon">
+        <ul class="icon-card">
+          <li class="icon-card-list">
+            <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="icon-card-list">
+            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="icon-card-list">
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="icon-card-list">
+            <a href="facebook.com"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="copyright">
+        copyright &copy; All Right Reserved | Designed
+        <span class="copy">By BrightTrump</span> 2023
+      </p>
+    </footer>
   </body>
 </html>

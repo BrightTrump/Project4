@@ -4,38 +4,88 @@
 }
 
 body {
-  font-family: "poppins" sans-serif;
+  font-family: "poppins sans-serif";
   margin: 0;
-  padding-left: 0.5em;
+  padding-left: 0;
+}
+
+header {
+  padding-top: 0.5em;
+}
+header .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.5em;
+}
+header .hero .logo {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+header .hero .logo span {
+  color: var(--primary-color);
+}
+header .hero .hero-ul {
+  border: 1px solid var(--primary-color);
+  border-radius: 45em;
+  padding: 0.5em 1.3em;
+  background-color: var(--primary-color);
+}
+header .hero .hero-ul .hero-link {
+  list-style-type: none;
+}
+header .hero .hero-ul .hero-link .hero-ref {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: white;
+}
+
+.sec {
+  background-color: rgba(66, 65, 65, 0.5333333333);
+  padding: 0.1em 0 0.1em 0;
+}
+.sec .sec-p {
+  justify-content: space-between;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .head {
   padding: 1em 0.5em 1em 0;
   background: white;
 }
-.head .logo {
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  font-size: 1.3em;
-}
-.head .logo span {
-  color: var(--primary-color);
-}
-.head .navbar {
+.head .container .mobile-menu {
   display: none;
 }
-.head .container {
+.head .container .navbar .navbar-ul {
   display: flex;
-  place-content: space-between;
+  gap: 3em;
+  margin: auto;
+  justify-content: center;
 }
-.head .container .mobile-menu {
-  cursor: pointer;
+.head .container .navbar .navbar-ul .current {
+  font-weight: bold;
+}
+.head .container .navbar .navbar-ul .link {
+  list-style-type: none;
+}
+.head .container .navbar .navbar-ul .link .ref {
+  text-decoration: none;
+  font-size: 1.6em;
+}
+.head .container .navbar .navbar-ul .link .ref:hover {
+  font-weight: bold;
 }
 
 .section-1 {
   background-color: rgba(243, 236, 236, 0.5333333333);
   padding-top: 2em;
+  text-align: center;
 }
 .section-1 .coach {
   text-align: center;
@@ -51,9 +101,10 @@ body {
   font-size: 2em;
 }
 .section-1 .img-1 {
-  width: 80%;
+  width: 40%;
   height: 100%;
-  padding-left: 2em;
+  justify-content: center;
+  margin: auto;
 }
 .section-1 .img-1:hover {
   transform: translateY(-10px);
@@ -81,16 +132,28 @@ body {
 .section-2 {
   line-height: 2em;
   background-color: #f2f2f2;
+  text-align: left;
+  padding: 0 3em 0 3em;
 }
 .section-2 .section-2-h3 {
   font-weight: bold;
   font-size: 1.2em;
   padding-top: 1em;
 }
+.section-2 .section-2-p {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+.section-2 .grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5em;
+}
 
 .section-3 {
   background-color: rgb(248, 240, 240);
   padding-bottom: 1em;
+  text-align: center;
 }
 .section-3 .testimonials {
   padding: 1em 0 0 0;
@@ -99,13 +162,23 @@ body {
   font-size: 50px;
 }
 .section-3 .quote {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20em;
+  text-align: left;
+  padding-left: 5em;
+  max-width: 1250px;
+}
+.section-3 .quote .quote-desc {
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .section-4 {
   background-color: var(--secondary-color);
   padding-bottom: 2em;
   margin-bottom: 1em;
+  text-align: center;
 }
 .section-4 .phylosophy {
   padding-top: 1em;
@@ -127,14 +200,25 @@ body {
 }
 
 .footer {
-  background-color: rgba(243, 236, 236, 0.5333333333);
+  background-color: rgba(143, 140, 140, 0.5333333333);
   color: black;
+  text-align: center;
 }
 .footer .author {
   padding-top: 1.2em;
 }
+.footer .icon .icon-card {
+  display: flex;
+  gap: 2em;
+  margin: auto;
+  justify-content: center;
+  list-style-type: none;
+}
 .footer .icon .icon-card .icon-card-list {
   position: relative;
+}
+.footer .icon .icon-card .icon-card-list:hover {
+  transform: translateY(-10px);
 }
 .footer .copyright .copy {
   color: var(--primary-color);
@@ -145,22 +229,25 @@ body {
   background-color: rgba(243, 236, 236, 0.5333333333);
   padding-bottom: 2em;
   padding-top: 2em;
+  text-align: center;
 }
 .abt-section-1 .abt-me {
-  text-align: center;
   line-height: 2em;
   -webkit-text-size-adjust: 2em;
      -moz-text-size-adjust: 2em;
           text-size-adjust: 2em;
-  padding-top: 1em;
+  padding: 1em 0 2em 0;
 }
 .abt-section-1 .desc {
   font-size: 3em;
+  max-width: 550px;
   text-align: center;
+  margin: auto;
+  padding-bottom: 1em;
 }
 .abt-section-1 .abt-img-1 {
-  width: 80%;
-  height: 100%;
+  width: 40%;
+  height: 80%;
   padding-left: 2em;
 }
 .abt-section-1 .abt-img-1:hover {
@@ -168,7 +255,9 @@ body {
 }
 
 .abt-section-2 {
-  text-align: left;
+  max-width: 550px;
+  text-align: center;
+  margin: auto;
 }
 .abt-section-2 .abt-coach {
   font-weight: bold;
@@ -190,6 +279,7 @@ body {
   background-color: var(--secondary-color);
   padding-bottom: 2em;
   margin-bottom: 1em;
+  text-align: center;
 }
 .abt-section-3 .phylosophy {
   padding-top: 1em;
@@ -212,23 +302,32 @@ body {
 
 /*pricing.html page*/
 .pricing-section-1 {
-  padding-bottom: 2em;
-  padding-top: 2em;
+  padding: 2em 0 2em 4em;
 }
 .pricing-section-1 .pricing {
   font-size: 3em;
-  text-align: center;
+  margin-bottom: 2em;
+  text-align: left;
+}
+.pricing-section-1 .packages {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5em;
+  padding-right: 2em;
 }
 .pricing-section-1 .packages .consult {
   font-size: 1em;
+  margin-bottom: 2em;
 }
 .pricing-section-1 .packages .explicit {
   font-size: 1em;
+  margin-bottom: 2em;
 }
 
 .pricing-section-2 {
   background-color: var(--secondary-color);
   padding-bottom: 2em;
+  text-align: center;
 }
 .pricing-section-2 .phylosophy {
   padding-top: 1em;
@@ -251,36 +350,41 @@ body {
 
 /*contact.html page*/
 .contact-section {
-  padding-top: 2em;
+  padding: 2em 0 0 4em;
+  background-color: rgb(241, 236, 236);
 }
-.contact-section .contact {
+.contact-section .contact-div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10em;
+}
+.contact-section .contact-div .contact {
   font-size: 3em;
 }
-.contact-section .cont {
+.contact-section .contact-div .cont {
   font-size: 1em;
   line-height: 1.5em;
 }
-.contact-section form {
+.contact-section .contact-div form {
   width: 100%;
-  background-color: rgb(217, 217, 224);
   padding-bottom: 1.2em;
 }
-.contact-section form input[type=text] {
+.contact-section .contact-div form input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  border: 1px solid black;
+  border: 1px solid rgb(241, 236, 236);
   box-sizing: border-box;
   border-radius: 1em;
 }
-.contact-section form textarea {
+.contact-section .contact-div form textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 0.5em 0 2em;
   box-sizing: border-box;
   border-radius: 1em;
 }
-.contact-section .contact-button {
+.contact-section .contact-div .contact-button {
   background-color: var(--secondary-color);
   color: white;
   text-decoration: none;
@@ -288,44 +392,197 @@ body {
   font-size: 16px;
   padding: 0.6em 2em;
 }
-.contact-section .contact-img-1 {
-  width: 80%;
-  height: 100%;
-  margin-top: 3em;
-  padding-left: 1em;
+.contact-section .contact-div .contact-img-1 {
+  width: 50%;
+  height: auto;
+  padding-top: 2em;
+  display: block;
+  margin: auto;
 }
 
-/*end of contact page*/
-.navbar.menu-btn {
-  display: block;
-  position: fixed;
-  z-index: 999;
-  right: 0;
-  top: 0;
-  background-color: black;
-  height: 100vh;
-}
-.navbar.menu-btn .navbar-ul {
-  padding: 1.5em;
-  margin-top: 2em;
-}
-.navbar.menu-btn .navbar-ul .link {
-  list-style-type: none;
-}
-.navbar.menu-btn .navbar-ul .link .ref {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 0.5em 0 0.5em 0;
-  font-size: 1.3em;
-  text-align: right;
-}
-.navbar.menu-btn .navbar-ul .link .ref:hover {
-  font-weight: bold;
-}
-
-.mobile-menu-exit {
-  float: right;
-  cursor: pointer;
-  margin: 0.5em;
+@media only screen and (max-width: 670px) {
+  .head {
+    padding: 1em 0.5em 1em 0;
+    background: white;
+  }
+  .head .container .mobile-menu {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .navbar {
+    display: none;
+  }
+  .section-2 {
+    line-height: 2em;
+    background-color: unset;
+    padding: 0.5em 0 2em 1em;
+    text-align: left;
+  }
+  .section-2 .grid {
+    display: inline;
+  }
+  .section-2 .grid .hero-grid .section-2-h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-top: 1em;
+  }
+  .section-2 .grid .section-2-p {
+    font-size: 1.4em;
+  }
+  .section-3 {
+    text-align: left;
+    padding: 0.5em 0 2em 1em;
+    background-color: #f2f2f2;
+  }
+  .section-3 .testimonials {
+    padding: 1em 0 0 0;
+  }
+  .section-3 .success {
+    font-size: 50px;
+  }
+  .section-3 .quote {
+    padding: 0;
+    display: block;
+  }
+  .section-3 .quote .quote-desc .quote-p {
+    text-align: left;
+  }
+  .section-4 {
+    padding-bottom: 2em;
+    text-align: center;
+  }
+  .section-4 .phylosophy {
+    padding-top: 1em;
+    color: white;
+  }
+  .section-4 .phil-test {
+    font-size: 2.5em;
+    color: white;
+    line-height: 1.2em;
+  }
+  .section-4 .talk-button {
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 45em;
+    font-size: 16px;
+    padding: 0.6em 1.3em;
+  }
+  .footer {
+    background-color: unset;
+    color: black;
+    text-align: left;
+    padding-left: 0.5em;
+  }
+  .footer .author {
+    padding-top: 1em;
+  }
+  .footer .icon .icon-card .icon-card-list {
+    position: relative;
+  }
+  .footer .copyright {
+    text-align: left;
+  }
+  .footer .copyright .copy {
+    color: var(--primary-color);
+  }
+  /*pricing.html page*/
+  .pricing-section-1 {
+    padding: 1em 0 1em 0.5em;
+  }
+  .pricing-section-1 .pricing {
+    font-size: 3em;
+    text-align: left;
+  }
+  .pricing-section-1 .packages {
+    display: block;
+  }
+  .pricing-section-1 .packages .consult {
+    font-size: 1em;
+  }
+  .pricing-section-1 .packages .explicit {
+    font-size: 1em;
+  }
+  /*contact.html page*/
+  .contact-section {
+    padding: 0 0 2em 0.3em;
+  }
+  .contact-section .contact-div {
+    display: block;
+  }
+  .contact-section .contact {
+    font-size: 3em;
+  }
+  .contact-section .cont {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .contact-section form {
+    padding-bottom: 1.2em;
+    box-sizing: border-box;
+    width: auto;
+  }
+  .contact-section form input[type=text] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 1em;
+  }
+  .contact-section form textarea {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 0.5em 0 2em;
+    box-sizing: border-box;
+    border-radius: 1em;
+  }
+  .contact-section .contact-button {
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 45em;
+    font-size: 16px;
+    padding: 0.6em 2em;
+  }
+  .contact-section .contact-img-1 {
+    width: 80%;
+    height: auto;
+  }
+  /*end of contact page*/
+  .head .container .navbar.menu-btn {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    background-color: black;
+    height: 100vh;
+  }
+  .head .container .navbar.menu-btn .navbar-ul {
+    display: block;
+    padding: 1.5em;
+    margin-top: 2em;
+  }
+  .head .container .navbar.menu-btn .navbar-ul .link {
+    list-style-type: none;
+  }
+  .head .container .navbar.menu-btn .navbar-ul .link .ref {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5em 0 0.5em 0;
+    font-size: 1.3em;
+    text-align: right;
+  }
+  .head .container .navbar.menu-btn .navbar-ul .link .ref:hover {
+    font-weight: bold;
+  }
+  .head .container .mobile-menu-exit {
+    float: right;
+    cursor: pointer;
+    margin: 0.5em;
+  }
 }/*# sourceMappingURL=styles.css.map */
